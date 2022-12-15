@@ -101,7 +101,7 @@ class GenerationModel(BaseModel):
         self.netG.eval()
         with torch.no_grad():
             _, C, H, W = self.var_L.shape
-            threshold = 2000
+            threshold = 2500
             if H >= threshold or W >= threshold:
                 self.fake_H = self.test_crop2((self.var_L, self.var_mask))
             else:
