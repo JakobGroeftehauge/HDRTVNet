@@ -8,10 +8,10 @@ datasets:
   test_1:  # the 1st test dataset
     name: test_set
     mode: LQGT_condition
-    dataroot_LQ: ../dataset/test_set/test_sdr
-    dataroot_cond: ../dataset/test_set/cond
-    dataroot_GT: ../dataset/test_set/test_hdr
-    cond_scale: 4
+    dataroot_LQ: /content/HDRTVNet/dataset/test_set/test_sdr
+    dataroot_cond: /content/HDRTVNet/dataset/test_set/cond
+    dataroot_GT: /content/HDRTVNet/dataset/test_set/test_hdr
+    cond_scale: 1
 
 #### network structures
 network_G:
@@ -23,5 +23,6 @@ network_G:
 path:
   root: ./
   # pretrain_model_G: ../experiments/global_color_mapping/models/latest_G.pth
-  pretrain_model_G: ../pretrained_models/AGCM_G.pth
+  pretrain_model_G: /content/HDRTVNet/pretrained_model/AGCM_weights.pth
+
 
