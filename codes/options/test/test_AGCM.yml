@@ -10,7 +10,7 @@ datasets:
     mode: LQGT_condition
     dataroot_LQ: /content/HDRTVNet/dataset/test_set/test_sdr
     dataroot_cond: /content/HDRTVNet/dataset/test_set/cond
-    dataroot_GT: /content/HDRTVNet/dataset/test_set/test_hdr
+    dataroot_GT: /content/HDRTVNet/dataset/test_set/test_sdr
     cond_scale: 1
 
 #### network structures
